@@ -9,4 +9,3 @@ This is a starter plugin for WordPress that I use for websites that use page bui
 * Includes a file called `cpt.php` which sets up new custom post types in WordPress, no CPT UI plugin is required.
 * Includes a file called `blog.php` where blog excerpt length, and end of the blog excerpt string can be customised
 * Includes a file called `admin-login.php` which allows to customise the styles of the WordPress Admin Login page
-* 
