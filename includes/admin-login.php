@@ -6,8 +6,8 @@ if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Custom styles for the WordPress admin login page
 */
 
-add_action( 'login_enqueue_scripts', 'custom_login_logo' );
-function custom_login_logo() { ?>
+add_action( 'login_enqueue_scripts', 'custom_login_styles' );
+function custom_login_styles() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
         background-image: url(<?= esc_url( plugins_url( 'assets/images/custom-logo.svg', __DIR__ )) ; ?>);
