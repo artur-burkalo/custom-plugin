@@ -1,3 +1,12 @@
 # Starter Plugin for WordPress
 
-This is a starter plugin for WordPress that Iuse for websites that use page builders, it adds some basic started files to do some custom work with WordPress.
+This is a starter plugin for WordPress that I use for websites that use page builders, it adds some starter files to do some custom work with WordPress.
+
+* No need to add `require` or `require_once` to load files from `custom-plugin/includes/*` folder, they load automaticly as soon as the new file is added in that folder
+* Load additional scripts and styles, comment out the `add_action()` if not required
+* Has a structure for a working folder inside the plugin
+* Includes a file called `remove-wowprdess-bloat.php` to remove WordPress bloat, you can read more about [how much bloat WordPress has](https://devartur.com/blog/remove-wordpress-bloat-from-head-for-faster-sites/)
+* Includes a file called `cpt.php` which sets up new custom post types in WordPress, no CPT UI plugin is required.
+* Includes a file called `blog.php` where blog excerpt length, and end of the blog excerpt string can be customised
+* Includes a file called `admin-login.php` which allows to customise the styles of the WordPress Admin Login page
+* 
