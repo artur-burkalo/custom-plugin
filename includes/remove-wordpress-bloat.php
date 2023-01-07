@@ -65,3 +65,11 @@ remove_action( 'wp_head', 'wp_resource_hints', 2 );
  * Removes WordPress version
 */
 remove_action('wp_head', 'wp_generator');
+
+
+/*
+ * Speed up backend by preventing plugin update checking and notifications
+ * Contributor: Davor Mlinarić
+*/
+remove_action( 'load-update-core.php', 'wp_update_plugins' );
+add_filter( 'pre_site_transient_update_plugins', '__return_null' );
