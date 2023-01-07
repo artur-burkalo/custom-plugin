@@ -33,3 +33,9 @@ function custom_script() {
     wp_enqueue_script( 'custom-script', plugins_url( '/assets/js/script.js' , __FILE__ ), array(), '1.0', true );
 }
 
+
+/*
+ * Clasic editor snippet, incase you want to remove Gutenberg Editor
+*/
+
+// add_filter('use_block_editor_for_post','__return_false');
