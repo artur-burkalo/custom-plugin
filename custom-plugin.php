@@ -4,7 +4,7 @@
  * Plugin Name:       Custom Plugin
  * Plugin URI:        https://devartur.com/
  * Description:       A plugin has been developed to extend and change some functionality in WordPress.
- * Version:           1.0
+ * Version:           1.0.0
  * Requires at least: 5.2
  * Requires PHP:      7.3
  * Author:            Artur Burkalo
@@ -27,8 +27,8 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . "includes/*.php" ) as $file ) {
  * Adding new style or script requires to change the name also e.g. custom-style, custom-script
 */
 
-add_action( 'wp_enqueue_scripts', 'custom_script' );
-function custom_script() {
+add_action( 'wp_enqueue_scripts', 'custom_styles_and_scripts' );
+function custom_styles_and_scripts() {
     wp_enqueue_style('custom-style', plugins_url( '/assets/css/style.css' , __FILE__ ), array(), '1.0', true);
     wp_enqueue_script( 'custom-script', plugins_url( '/assets/js/script.js' , __FILE__ ), array(), '1.0', true );
 }
