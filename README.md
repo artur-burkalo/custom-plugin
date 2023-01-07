@@ -1,6 +1,6 @@
 # Starter Plugin for WordPress
 
-This is a starter plugin for WordPress that I use for websites that use page builders, it adds some starter files to do some custom work with WordPress.
+This is a starter plugin for WordPress where I have used page builders, it adds some useful starter files to do some custom work with WordPress.
 
 * No need to add `require` or `require_once` to load files from `custom-plugin/includes/*` folder, they load automaticly as soon as the new file is added to that folder
 * Load additional scripts and styles, comment out the `add_action( 'wp_enqueue_scripts', 'custom_script' );` insde the `custom-plugin.php` file if not required
