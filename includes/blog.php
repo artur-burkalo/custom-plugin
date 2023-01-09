@@ -12,7 +12,7 @@ function blog_excerpt_length( $length ) {
 }
 
 /*
- * Customising blog post excerpt lenght if required
+ * Customising blog post excerpt ending with a custom string
 */
 
 // add_filter( 'excerpt_more', 'blog_excerpt' );

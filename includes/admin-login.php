@@ -6,8 +6,8 @@ if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Custom styles for the WordPress admin login page
 */
 
-add_action( 'login_enqueue_scripts', 'custom_login_styles' );
-function custom_login_styles() { ?>
+add_action( 'login_enqueue_scripts', 'da_custom_login_styles' );
+function da_custom_login_styles() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
         background-image: url(<?= esc_url( plugins_url( 'assets/images/custom-logo.svg', __DIR__ )) ; ?>);
@@ -32,7 +32,7 @@ function custom_login_styles() { ?>
  * Custom link for when you click on the logo in the WordPress admin login page
 */
 
-add_filter('login_headerurl', 'custom_login_url');
-function custom_login_url() {
+add_filter('login_headerurl', 'da_custom_login_url');
+function da_custom_login_url() {
     return '/';
 }
